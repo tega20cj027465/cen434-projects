@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Club</title>
+
+    <link rel="stylesheet" href="club.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>AR Club</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <p class="error"></p>
+            <div class="form-group">
+                <label for="matriculation">Matriculation Number:</label>
+                <input type="text" id="matriculation" name="matriculation" required>
+            </div>
+            <p class="error"></p>
+            <div class="form-group">
+                <label for="level">Level:</label>
+                <select name="level" id="level">
+                    <option value="please-select">please select</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                    <option value="500">500</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course">Course of Study:</label>
+                <input type="text" id="course" name="course" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="form-group">
+                <label for="programming">Programming Language:</label>
+                <select name="lang" id="lang">
+                    <option value="please-select">please select</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tools">Tools</label>
+                <select name="tools" id="tools">
+                    <option value="please-select">please select</option>
+                    <option value="ar-kit">AR Kit</option>
+                    <option value="unity">Unity</option>
+                </select>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

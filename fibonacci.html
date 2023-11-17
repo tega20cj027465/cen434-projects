@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+<body style="display: flex; flex-direction: column; line-height: 2em; font-size: 1.5em; text-align: center;">
+    <h2>Fibonacci of 83</h2>
+
+    <p id="ans" style="word-wrap: break-word;"></p>
+</body>
+    <script>
+        let space = document.getElementById("ans");
+        let f = [];
+        let n = 83;
+
+        const fib = () => {
+
+            for(i = 0; i < n; i++){
+                if(i === 0){
+                    f[i] = 0;
+                }
+    
+                else if (i === 1){
+                    f[i] = 1;
+                }
+    
+                else {
+                    f[i] = f[i-1] + f[i-2];
+                }
+
+                console.log(f[i]);
+            }
+
+            return f
+            
+        }
+
+        space.innerText = fib();
+    </script>
+</html>

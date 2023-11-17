@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body style="font-family: 'Poppins'; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>Prime Number</h1>
+    <p>Check if your number is a prime number</p>
+    <form action="#">
+        <label for="number">Number:</label>
+        <input type="text" id="number" placeholder="Enter your number here" style="height: 2em; width: 250px; border-radius: 5px;">
+    </form>
+    <button id="check" onclick="primeNumber()" style="height: 2rem; width: 100px; background-color: pink; margin: 20px;">Check</button>
+    <p id="ans"></p>
+</body>
+
+<script>
+    num = document.getElementById("number");
+    ans = document.getElementById("ans");
+    check = document.getElementById("check");
+
+    const primeNumber = (x) => {
+        for (let i = 2; i <= x/2; i++) {
+            if (x % i === 0) {
+                console.log(1);
+                return "Not Prime";
+            }
+            return "Prime";
+        }
+    }
+
+    check.addEventListener("click", (e) => {
+        ans.innerText = primeNumber(+num.value);
+    })
+
+
+   </script>
+
+</html>
