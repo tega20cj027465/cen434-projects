@@ -1,2 +1,6 @@
 # cen434-projects
-Projects in CEN 434 
+
+*Author: Tega Ofejiro-Ekomekido 20CJ027465*
+
+#### About
+- This repository contains projects built in the CEN 434 (Computer Software Engineering) class.
