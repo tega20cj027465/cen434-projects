@@ -9,7 +9,7 @@ my_db = conn.connect(
     # host = os.getenv("DB_HOST"),
     host = 'localhost',
     user = 'root',
-    password = 'jesus4life'
+    password = 'prodbysky'
 )
 
 # print(my_db)
